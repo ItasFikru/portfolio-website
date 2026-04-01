@@ -1,0 +1,46 @@
+.custom-footer {
+    background-color: #1f272e; /* Slightly darker than your hero-left */
+    color: white;
+    border-top: 1px solid rgba(108, 111, 220, 0.2); /* Subtle purple border */
+}
+.footer-logo {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #6c6fdc;
+}
+
+.footer-text {
+    color: #adb5bd;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.footer-divider {
+    border-color: rgb(255, 255, 255);
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(108, 111, 220, 0.1);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    background-color: #6c6fdc;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #6c757d;
+}

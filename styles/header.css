@@ -1,0 +1,90 @@
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: transparent !important;
+}
+.navbar-brand {
+    color: white !important;
+    letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 8px 12px;
+}
+.navbar-toggler-icon {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    border: none;
+}
+.navbar-toggler {
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+.navbar-toggler:hover {
+    background-color: #5a5ec9;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* Base style for middle links */
+.middle-links .nav-link {
+    position: relative;
+    color: white; /* normal text color */
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+.middle-links .nav-link:hover {
+    color: #5a5ec9;     /* match underline or any color you like */
+}
+/* underline */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #5a5ec9;
+
+    /* 🔥 START FROM CENTER */
+    left: 50%;
+    bottom: 0;
+    width: 0;
+
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+/* 🔥 EXPAND OUTWARD */
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.middle-links .nav-link.active {
+    color: #5a5ec9; /* same as hover color */
+}
+
+/* underline for active */
+.middle-links .nav-link.active::after {
+    width: 100%;      /* full underline */
+    background-color: #5a5ec9; /* match hover/active color */
+}
+.btn {
+    border-radius: 0;
+}
+.contact-btn {
+    background-color: #6c6fdc; /* purple */
+    color: white;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* hover effect */
+.contact-btn:hover {
+    background-color: #5a5ec9;
+    color: white;
+}
